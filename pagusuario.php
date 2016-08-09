@@ -1,8 +1,17 @@
+<?php
+	include("seguridad.php");
+	
+	if(!sesion_iniciada())
+	{
+		header("Location:index.html");
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Operaciones</title>
+<link rel="stylesheet" href="estilos.css"> 
 </head>
 <body>
 	<header>
@@ -12,13 +21,15 @@
             Sistema de información web para el desarrollo
             de operaciones matemáticas
     	</p>
+        
+        <a href="cerrarsesion.php">Cerrar Sesión</a>
+        
  	</header>
     
     <aside>
     	<p>
         	Usuario:
-            <?php
-				session_start();
+            <?php				
 				printf("%s", $_SESSION['usuario']); 
 			?>
         </p>

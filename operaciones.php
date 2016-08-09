@@ -6,16 +6,13 @@
 	{
 		header("Location:ingreso.html");
 	}
-	
-	if( sesion_iniciada() )
-	{		
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Operaciones</title>
+<link href="estilos.css" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -27,32 +24,25 @@
     	</p>
  	</header>
     
-    <section>
+    <section class="divisionForm">
     
     	<form method="post" action="operar.php">
-        	<p>
-            	Ingrese primer número:
-                <input type="text" name="num1">
-            </p>
+        	Ingrese primer número:<br>
+            <input type="text" name="num1"><br>          
             
-            <p>
-            	Ingrese segundo número:
-                <input type="text" name="num2">
-            </p>
+            Ingrese segundo número:<br>
+            <input type="text" name="num2"><br>
+                    
             
-            <p>
-            	<select name="operaciones">
-                	<option value="ninguna">Seleccione operación a realizar</option>
-                    <option value="suma">Suma</option>
-                    <option value="resta">Resta</option>
-                    <option value="multiplicacion">Multiplicación</option>
-                    <option value="division">División</option>
-                </select>
-            </p>
-            
-            <p>
-            	<button type="submit">Operar</button>
-            </p>      
+            <select name="operaciones">
+               	<option value="ninguna">Seleccione operación a realizar</option>
+                   <option value="suma">Suma</option>
+                   <option value="resta">Resta</option>
+                   <option value="multiplicacion">Multiplicación</option>
+                   <option value="division">División</option>
+            </select>  
+                        
+           	<br><button type="submit">Operar</button>                 
             
         </form>	
     	
@@ -67,6 +57,3 @@
     </footer>
 </body>
 </html>
-<?php
-	}
-?>

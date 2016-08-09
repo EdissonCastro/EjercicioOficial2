@@ -1,0 +1,99 @@
+@charset "utf-8";
+body{
+	background-image:url("fondo.png");
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:150%;
+	text-align: center;
+	
+}
+
+header{
+	height:20%;
+	padding:20px;
+	font-size:150%;
+}
+
+footer{
+	margin-top:80px;
+}
+
+
+
+.divisionForm{
+	background-color:rgba(0, 0, 0, 0.3);
+	width:60%;
+	padding:5px;
+	height:55%;
+	margin:auto;	
+	text-align:center;
+	border-radius:5px;
+}
+
+.division{
+	background-color:rgba(0, 0, 0, 0.3);
+	width:60%;
+	padding:5px;
+	height:165px;
+	margin:auto;	
+	text-align:center;
+	border-radius:5px;
+}
+
+a:active
+{
+	color:black;
+}
+
+a:visited
+{
+	color:black;
+}
+
+a:link
+{
+	text-decoration:none;
+	color:black;
+}
+
+a:hover
+{
+	background-color:rgba(255,255,255,1);
+	
+}
+
+a{
+	padding:15px;
+	border: 1px solid white;
+	border-radius:5px;
+}
+
+div{
+	
+	height:100%;
+}
+
+input[type=text], input[type=password], select{
+	width:50%;	
+	margin:20px 0;
+	padding:10px;
+	text-align:center;
+	font-size:20px;		
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+button{
+	font-size:20px;
+	width:100px;
+	height:50px;	
+	font-family:Arial, Helvetica, sans-serif;
+	border-radius:8px;
+	background-color:rgba(255,255,255,1);
+	border-style:none;
+}
+
+button:hover
+{
+	background-color:rgba(0,153,204,0.5);
+	
+}
+

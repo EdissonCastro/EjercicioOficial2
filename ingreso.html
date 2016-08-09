@@ -3,51 +3,53 @@
 <head>
 <meta charset="utf-8">
 <title>Operaciones</title>
+<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-	<header>
-		<strong>Operaciones matemáticas</strong>
-                
-        <p>
-            Sistema de información web para el desarrollo
-            de operaciones matemáticas
-    	</p>
- 	</header>
-    
-    <section>
-    
-    	<h1>Acceso al sistema de información:</h1>
-        
-        <form method="post" action="login.php">
-        	<p>
-            	Ingrese su número de documento:
-                <input type="text" name="documento">
-           	</p>
-        
-			<p>
-            	Ingrese su contraseña:
-                <input type="password" name="clave">
-           	</p>
-            
+	<div>
+        <header>
+            <strong>Operaciones matemáticas</strong>
+                    
             <p>
-            	¿Cuánto es 1 + 1?:
-                <input type="text" name="respuesta">
-           	</p>
-            
-            <p>
-            	<button type="submit">Ingresar</button>
-           	</p>
+                Sistema de información web para el desarrollo
+                de operaciones matemáticas
+            </p>
+        </header>
         
-        </form>
+        <section class="divisionForm">
+        
+            <h1>Acceso al sistema de información:</h1>
+            
+            <form method="post" action="login.php">
                 
-    </section>
-    
-    <footer>
-    	<em>
-        	Servicio Nacional de Aprendizaje - SENA
-            Mariana Romero, Edisson Castro, Esneider Ardila  &reg;
-            Todos los derechos reservados
-        </em>    
-    </footer>
+                Ingrese su número de documento:  <br>              
+                <input type="text" name="documento"><br>
+                            
+               
+               Ingrese su contraseña:	<br>
+               <input type="password" name="clave"><br>
+                
+                
+               
+               ¿Cuánto es 1 + 1?:<br>
+               <input type="text" name="respuesta"><br>
+                
+                
+                <p>
+                    <button type="submit">Ingresar</button>
+                </p>
+            
+            </form>
+                    
+        </section>
+        
+        <footer>
+            <em>
+                Servicio Nacional de Aprendizaje - SENA
+                Mariana Romero, Edisson Castro, Esneider Ardila  &reg;
+                Todos los derechos reservados
+            </em>    
+        </footer>
+	</div>
 </body>
 </html>
