@@ -4,7 +4,7 @@
 	
 	if( !sesion_iniciada() )
 	{
-		header("Location:ingreso.html");
+		header("Location:index.html");
 	}
 ?>
 <!DOCTYPE html>
@@ -15,45 +15,38 @@
 <link href="estilos.css" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<strong>Operaciones matemáticas</strong>
+	<div class="contenedor">
+    
+    	<?php include("encabezado.php"); ?>
+        
+        <?php include("barranav2.php"); ?>
+        
+        <section class="divisionForm">
+        
+            <form method="post" action="operar.php">
+                Ingrese primer número:<br>
+                <input type="text" name="num1"><br>          
                 
-        <p>
-            Sistema de información web para el desarrollo
-            de operaciones matemáticas
-    	</p>
- 	</header>
-    
-    <section class="divisionForm">
-    
-    	<form method="post" action="operar.php">
-        	Ingrese primer número:<br>
-            <input type="text" name="num1"><br>          
-            
-            Ingrese segundo número:<br>
-            <input type="text" name="num2"><br>
-                    
-            
-            <select name="operaciones">
-               	<option value="ninguna">Seleccione operación a realizar</option>
-                   <option value="suma">Suma</option>
-                   <option value="resta">Resta</option>
-                   <option value="multiplicacion">Multiplicación</option>
-                   <option value="division">División</option>
-            </select>  
+                Ingrese segundo número:<br>
+                <input type="text" name="num2"><br>
                         
-           	<br><button type="submit">Operar</button>                 
+                
+                <select name="operaciones">
+                    <option value="ninguna">Seleccione operación a realizar</option>
+                       <option value="suma">Suma</option>
+                       <option value="resta">Resta</option>
+                       <option value="multiplicacion">Multiplicación</option>
+                       <option value="division">División</option>
+                </select>  
+                            
+                <br><button type="submit">Operar</button>                 
+                
+            </form>	
             
-        </form>	
-    	
-    </section>
-    
-    <footer>
-    	<em>
-        	Servicio Nacional de Aprendizaje - SENA
-            Mariana Romero, Edisson Castro, Esneider Ardila  &reg;
-            Todos los derechos reservados
-        </em>    
-    </footer>
+        </section>
+        
+        <?php include("piepagina.php"); ?>        
+          
+    </div>    
 </body>
 </html>

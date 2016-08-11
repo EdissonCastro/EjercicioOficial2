@@ -14,41 +14,41 @@
 <link rel="stylesheet" href="estilos.css"> 
 </head>
 <body>
-	<header>
-		<strong>Operaciones matemáticas</strong>
-                
-        <p>
-            Sistema de información web para el desarrollo
-            de operaciones matemáticas
-    	</p>
+	<div class="contenedor">
         
-        <a href="cerrarsesion.php">Cerrar Sesión</a>
+        <?php include("encabezado.php"); ?>
         
- 	</header>
-    
-    <aside>
-    	<p>
-        	Usuario:
-            <?php				
-				printf("%s", $_SESSION['usuario']); 
-			?>
-        </p>
-    </aside>
-    
-    <section>
-    
-    	Seleccione una opción:
-        <a href="operaciones.php">Realizar operaciones</a>
-        <a href="consultaroperaciones.php">Consultar operaciones realizadas</a>
+        <?php include("barranav1.php"); ?>
+        
+        <aside>
+            <div class="sesion">
+                Usuario:
+                <?php				
+                    printf("%s<br>", $_SESSION['usuario']);				 
+                ?>
+            </div>          
+            
+        </aside>
+        
+        <section class="divisionForm">  
+            
+            
+            <form method="post" action="acciones.php">
+            	<select name="opciones" style="width:60%;">
+                	<option value="ninguna">Seleccione una opción</option>
+                	<option value="operar">Realizar operaciones</option>
+                    <option value="consultar">Consultar operaciones realizadas</option>
+                </select>
+                <br>
+                <button type="submit">Proceder</button>
+            </form>       
+            
+            
+                    
+        </section>
+        
+        <?php include("piepagina.php"); ?>
                 
-    </section>
-    
-    <footer>
-    	<em>
-        	Servicio Nacional de Aprendizaje - SENA
-            Mariana Romero, Edisson Castro, Esneider Ardila  &reg;
-            Todos los derechos reservados
-        </em>    
-    </footer>
+	</div>
 </body>
 </html>

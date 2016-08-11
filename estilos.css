@@ -4,6 +4,8 @@ body{
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:150%;
 	text-align: center;
+	margin:0px;
+	padding:0px;
 	
 }
 
@@ -11,10 +13,14 @@ header{
 	height:20%;
 	padding:20px;
 	font-size:150%;
+ 	border-bottom:1px solid rgba(0,0,0,0.2);
+	margin-bottom:25px;
 }
 
 footer{
-	margin-top:80px;
+	border-top:1px solid rgba(0,0,0,0.2);
+	margin-top:25px;
+	padding:20px;
 }
 
 
@@ -23,8 +29,9 @@ footer{
 	background-color:rgba(0, 0, 0, 0.3);
 	width:60%;
 	padding:5px;
-	height:55%;
-	margin:auto;	
+	height:auto;
+	margin:auto;
+	margin-top:25px;	
 	text-align:center;
 	border-radius:5px;
 }
@@ -34,9 +41,19 @@ footer{
 	width:60%;
 	padding:5px;
 	height:165px;
-	margin:auto;	
+	margin:auto;
+	margin-top:25px;	
 	text-align:center;
 	border-radius:5px;
+}
+
+.sesion{
+	background-color:rgba(0,0,0,0.3);	
+	float:right;
+	font-size:20px;
+	border-radius:5px;
+	margin:20px;
+	padding:10px;
 }
 
 a:active
@@ -58,6 +75,7 @@ a:link
 a:hover
 {
 	background-color:rgba(255,255,255,1);
+	color:rgba(0,153,204,1);
 	
 }
 
@@ -65,11 +83,14 @@ a{
 	padding:15px;
 	border: 1px solid white;
 	border-radius:5px;
+	margin:0px;
 }
 
-div{
-	
+.contenedor{
+	background-color:rgba(255,251,251,1.00);
 	height:100%;
+	width:80%;
+	margin:auto;
 }
 
 input[type=text], input[type=password], select{
@@ -83,17 +104,77 @@ input[type=text], input[type=password], select{
 
 button{
 	font-size:20px;
-	width:100px;
-	height:50px;	
+	width:auto;
+	height:50px;
+	margin:20px;	
 	font-family:Arial, Helvetica, sans-serif;
 	border-radius:8px;
 	background-color:rgba(255,255,255,1);
 	border-style:none;
+	color:rgba(0,153,204,1);
 }
 
 button:hover
 {
 	background-color:rgba(0,153,204,0.5);
+	color:rgba(255,255,255,1.00);
 	
 }
+
+aside{
+	margin-bottom:10px;
+	width:auto;
+	height:80px;
+	
+}
+
+ul{
+	
+	list-style-type:none;
+	margin:0;
+	padding:15px;	
+	background-color:rgba(0,153,204,0.5);
+	height:20px;
+	text-align:center;
+}
+
+li{display:inline;}
+
+li a{		
+	width:200px;
+	border-radius:0px;
+	border:none;
+	color: #000;
+	
+	text-decoration:none;
+}
+
+table, th, tr, td{
+	width:70%;
+	text-align:center;
+	padding:10px;
+	margin:auto;
+	margin-top:25px;
+	border: 1px solid rgba(0,153,204,1);
+	border-collapse:collapse;
+}
+
+th, tr, td{width:50px;}
+
+th{
+	background-color:rgba(0,250,204,0.3);
+}
+
+tr:nth-child(odd){
+	color:white;
+	background-color:rgba(0,153,204,1);	
+}
+
+tr:nth-child(even){
+	color:rgba(0,153,204,1);
+	background-color:rgba(255,255,255,1);
+}
+
+
+
 
